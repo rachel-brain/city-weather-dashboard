@@ -1,14 +1,56 @@
+/* Color palette sourced from https://www.color-hex.com/color-palette/110983 : PFIL 01 color palette */
 :root {
-    --black: #000000;
-    --red: #ff0000;
-    --green: #008000;
-    --teal: #088da5;
-    --grey: #c0c0c0;
+    --black: #191919;
+    --darker-blue: #063f72;
+    --medium-blue: #1769b3;
+    --light-blue: #5d97cb;
+    --grey: #f9f9f9;
     --white: #fff;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    background-color: var(--white);
+}
+
+h1 {
+    background-color: var(--darker-blue);
+    color: var(--white);
+    text-align: center;
+    font-size: 50px;
+    line-height: 2.0;
+}
+
+h2 {
+    color: var(--black);
+    text-align: left;
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+#city-search {
+    padding: 0 35px 35px 0;
+}
+
+#city-results {
+    padding-left: 5px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+
+.form-group {
+    border-bottom: 1px solid var(--light-blue);
+}
+
+.card {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.0;
+    border: 1px solid var(--medium-blue);
+    border-radius: 5px;
+    gap: 5px;
+    margin: 5px;
 }
