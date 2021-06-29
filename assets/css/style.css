@@ -1,0 +1,14 @@
+:root {
+    --black: #000000;
+    --red: #ff0000;
+    --green: #008000;
+    --teal: #088da5;
+    --grey: #c0c0c0;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
