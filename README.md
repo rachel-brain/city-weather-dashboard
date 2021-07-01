@@ -43,9 +43,8 @@ The following image shows the web application's appearance and functionality:
 
 * URL of the deployed application:
 
-
+https://rachel-brain.github.io/city-weather-dashboard/
 
 * URL of the GitHub repository:
 
-
-
+https://github.com/rachel-brain/city-weather-dashboard
