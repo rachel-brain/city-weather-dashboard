@@ -24,15 +24,16 @@
                 <h2>Search for a city:</h2>
                 <form>
                     <div class="form-group">
-                        <input type="city" class="form-control" id="cityInput" placeholder="melbourne">
+                        <input type="city" class="form-control" id="city-input" placeholder="melbourne">
                         <button type="search" class="btn btn-primary" id="search-button">Search</button>
                         <br>
                     </div>
                 </form>
             </div>
             <div id="city-results" class="col-8">
-                <h2>Loading... (city/date/icon)</h2>
-                <h4 id="icon" class="result-icon">Weather icon</h4>
+                <h2> <span id="city-details">loading...(city)</span></h2>
+                <h2> <span id="today">loading...(date)</span></h2>
+                <h4> <span id="icon" class="result-icon">loading...(weather icon)</span></h4>
                 <br>
                 <p id="max-temp" class="result-text">Temperature: </p>
                 <p id="wind-speed" class="result-text">Wind: </p>
