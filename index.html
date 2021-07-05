@@ -24,68 +24,83 @@
                 <h2>Search for a city:</h2>
                 <form>
                     <div class="form-group">
-                        <input type="city" class="form-control" id="city-input" placeholder="melbourne">
-                        <button type="search" class="btn btn-primary" id="search-button">Search</button>
-                        <br>
+                        <form id="city-form" method="POST">
+                            <input type="city" class="form-control" id="city-input" placeholder="wagga wagga">
+                            <button type="search" class="btn btn-primary" id="search-button">Search</button>
+                            <br>
+                            <br>
+                        </form>
+                        <p>Search history: </p>
+                        <ul id="city-list"></ul>
                     </div>
-                </form>
             </div>
-            <div id="city-results" class="col-8">
+
+            <div id="city-results" class="col-6">
                 <h2> <span id="city-details">loading...(city)</span></h2>
-                <h2> <span id="today">loading...(date)</span></h2>
-                <h4> <span id="icon" class="result-icon">loading...(weather icon)</span></h4>
-                <br>
-                <p id="max-temp" class="result-text">Temperature: </p>
-                <p id="wind-speed" class="result-text">Wind: </p>
-                <p id="humidity" class="result-text">Humidity: </p>
-                <p id="uvi" class="result-text">UV Index: </p>
+                <h2> Date: <span id="today">loading...(date)</span></h2>
+                <h4> <span id="icon" class="result-icon"></span><img src="" alt="" class="icon" /></h4>
+                <p> Temperature (<span id="super">o</span>C): <span id="max-temp" class="result-text"></span></p>
+                <p> Wind speed (kmph): <span id="wind-speed" class="result-text"></span></p>
+                <p> Humidity (%): <span id="humidity" class="result-text"></span></p>
+                <p> UV Index: <span id="uvi" class="result-text"></span></p>
             </div>
+
             <div id="city-forecast" class="col-12">
                 <h2>5-day forecast:</h2>
                 <div class="card-group">
                     <div class="card" style="width: 20rem;">
                         <div id="card1" class="card-body">
-                            <h3 class="card-title">Forecast - today+1</h3>
-                            <h4 class="card-subtitle mb-2 text-muted">Weather icon</h4>
-                            <p class="card-text">Temperature: </p>
-                            <p class="card-text">Wind: </p>
-                            <p class="card-text">Humidity: </p>
+                            <h3> <span id="forecast-date-1" class="card-title">loading...(forecast date</span></h3>
+                            <h4> <span id="forecast-icon-1" class="card-subtitle mb-2"></span><img src="" alt=""
+                                    class="icon-1" /></h4>
+                            <p> Temperature (<span id="super">o</span>C): <span id="forecast-max-temp-1"
+                                    class="card-text"></span></p>
+                            <p> Wind speed (kmph): <span id="forecast-wind-speed-1" class="card-text"></span></p>
+                            <p> Humidity (%): <span id="forecast-humidity-1" class="card-text"></span></p>
                         </div>
                     </div>
                     <div class="card" style="width: 20rem;">
-                        <div id="card1" class="card-body">
-                            <h3 class="card-title">Forecast - today+2</h3>
-                            <h4 class="card-subtitle mb-2 text-muted">Weather icon</h4>
-                            <p class="card-text">Temperature: </p>
-                            <p class="card-text">Wind: </p>
-                            <p class="card-text">Humidity: </p>
+                        <div id="card2" class="card-body">
+                            <h3> <span id="forecast-date-2" class="card-title">loading...(forecast date</span></h3>
+                            <h4> <span id="forecast-icon-2" class="card-subtitle mb-2"></span><img src="" alt=""
+                                    class="icon-2" /></h4>
+                            <p> Temperature (<span id="super">o</span>C): <span id="forecast-max-temp-2"
+                                    class="card-text"></span></p>
+                            <p> Wind speed (kmph): <span id="forecast-wind-speed-2" class="card-text"></span></p>
+                            <p> Humidity (%): <span id="forecast-humidity-2" class="card-text"></span></p>
                         </div>
                     </div>
                     <div class="card" style="width: 20rem;">
-                        <div id="card1" class="card-body">
-                            <h3 class="card-title">Forecast - today+3</h3>
-                            <h4 class="card-subtitle mb-2 text-muted">Weather icon</h4>
-                            <p class="card-text">Temperature: </p>
-                            <p class="card-text">Wind: </p>
-                            <p class="card-text">Humidity: </p>
+                        <div id="card3" class="card-body">
+                            <h3> <span id="forecast-date-3" class="card-title">loading...(forecast date</span></h3>
+                            <h4> <span id="forecast-icon-3" class="card-subtitle mb-2"></span><img src="" alt=""
+                                    class="icon-3" /></h4>
+                            <p> Temperature (<span id="super">o</span>C): <span id="forecast-max-temp-3"
+                                    class="card-text"></span></p>
+                            <p> Wind speed (kmph): <span id="forecast-wind-speed-3" class="card-text"></span></p>
+                            <p> Humidity (%): <span id="forecast-humidity-3" class="card-text"></span></p>
                         </div>
                     </div>
                     <div class="card" style="width: 20rem;">
-                        <div id="card1" class="card-body">
-                            <h3 class="card-title">Forecast - today+4</h3>
-                            <h4 class="card-subtitle mb-2 text-muted">Weather icon</h4>
-                            <p class="card-text">Temperature: </p>
-                            <p class="card-text">Wind: </p>
-                            <p class="card-text">Humidity: </p>
+                        <div id="card4" class="card-body">
+                            <h3> <span id="forecast-date-4" class="card-title">loading...(forecast date</span></h3>
+                            <h4> <span id="forecast-icon-4" class="card-subtitle mb-2"></span><img src="" alt=""
+                                    class="icon-4" /></h4>
+                            <p> Temperature (<span id="super">o</span>C): <span id="forecast-max-temp-4"
+                                    class="card-text"></span></p>
+                            <p> Wind speed (kmph): <span id="forecast-wind-speed-4" class="card-text"></span></p>
+                            <p> Humidity (%): <span id="forecast-humidity-4" class="card-text"></span></p>
                         </div>
                     </div>
                     <div class="card" style="width: 20rem;">
-                        <div id="card1" class="card-body">
-                            <h3 class="card-title">Forecast - today+5</h3>
-                            <h4 class="card-subtitle mb-2 text-muted">Weather icon</h4>
-                            <p class="card-text">Temperature: </p>
-                            <p class="card-text">Wind: </p>
-                            <p class="card-text">Humidity: </p>
+                        <div id="card5" class="card-body">
+                            <h3> <span id="forecast-date-5" class="card-title">loading...(forecast date</span></h3>
+                            <h4> <span id="forecast-icon-5" class="card-subtitle mb-2"></span><img src="" alt=""
+                                    class="icon-5" /></h4>
+                            <p> Temperature (<span id="super">o</span>C): <span id="forecast-max-temp-5"
+                                    class="card-text"></span></p>
+                            <p> Wind speed (kmph): <span id="forecast-wind-speed-5" class="card-text"></span></p>
+                            <p> Humidity (%): <span id="forecast-humidity-5" class="card-text"></span></p>
                         </div>
                     </div>
                 </div>
